@@ -1,0 +1,33 @@
+{
+  "name": "asciidoctor-element",
+  "version": "1.0.0",
+  "description": "Element wrapper for the asciidoctor.js library",
+  "private": true,
+  "authors": [
+    "motemen <motemen@gmail.com>"
+  ],
+  "keywords": [
+    "web-components",
+    "polymer",
+    "asciidoctor",
+    "asciidoc",
+    "container",
+    "wrapper"
+  ],
+  "dependencies": {
+    "asciidoctor.js": "~1.5.2",
+    "polymer": "Polymer/polymer#^1.0.0"
+  },
+  "license": "https://polymer.github.io/LICENSE.txt",
+  "main": "asciidoctor-element.html",
+  "repo": {
+    "type": "git",
+    "url": "git://github.com/motemen/asciidoctor-element.git"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
+    "test-fixture": "polymerelements/test-fixture#^1.0.0",
+    "web-component-tester": "*",
+    "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0"
+  }
+}
