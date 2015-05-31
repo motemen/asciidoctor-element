@@ -39,7 +39,7 @@ deploy:
 
           git rev-parse HEAD > $out/GIT_REVISION
 
-          cat $out/components/$name/index.html | sed "s:<head>:<head><base href='components/$name/':" > $out/index.html
+          cat $out/components/$name/index.html | sed "s:<head>:<head><base href='components/$name/'>:" > $out/index.html
     - lukevivier/gh-pages@0.2.1:
         token: $GITHUB_TOKEN
         basedir: gh-pages
