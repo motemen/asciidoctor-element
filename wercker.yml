@@ -1,9 +1,6 @@
 box: motemen/nodejs-java-browsers
 build:
   steps:
-    - script:
-        name: install git
-        code: apt-get install -y git
     - npm-install
     - script:
         name: bower install
@@ -16,11 +13,10 @@ build:
 deploy:
   steps:
     - script:
-        name: install git
-        code: apt-get install -y git
-    - script:
         name: generate gh-pages content
         code: |
+          set -x
+
           url=$(git config remote.origin.url)
           url=${url%.git}
 
