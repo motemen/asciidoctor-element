@@ -117,6 +117,16 @@ the script content will _not_ update the rendered asciidoc!
       }
 
       this.$.content.innerHTML = Opal.Asciidoctor.$convert(this.asciidoc);
+
+      var codeElems = Polymer.dom(this.$.content).querySelectorAll('pre.highlight code[data-lang]');
+      for (var i = 0, len = codeElems.length; i < len; i++) {
+        var codeElem = codeElems[i];
+        var codeText = codeElem.textContent;
+        var highlighted = this._highlight(codeText, codeElem.getAttribute('data-lang'));
+        if (highlighted && highlighted !== codeText) {
+          codeElem.innerHTML = highlighted;
+        }
+      }
     },
 
     _highlight: function(code, lang) {
