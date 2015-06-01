@@ -1,4 +1,4 @@
-asciidoctor-element
+asciidoctor-element [![wercker status](https://app.wercker.com/status/39181af82db5d41857ffcddc356dc830/s "wercker status")](https://app.wercker.com/project/bykey/39181af82db5d41857ffcddc356dc830)
 ===================
 
 Element wrapper for the [asciidoctor.js](https://github.com/asciidoctor/asciidoctor.js) library.
