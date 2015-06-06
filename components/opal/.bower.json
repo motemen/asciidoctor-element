@@ -1,0 +1,37 @@
+{
+  "name": "opal",
+  "version": "0.6.3",
+  "homepage": "http://opalrb.org",
+  "authors": [
+    "Adam Beynon <adam.beynon@gmail.com>",
+    "Meh",
+    "Elia Schito <elia@schito.me>"
+  ],
+  "description": "Ruby runtime and core library for javascript",
+  "main": "opal/current/opal.js",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "Ruby",
+    "Javascript",
+    "Compiler"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "0.6.3",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.6.3",
+    "commit": "2cd56a68deddcc0ebc44dd44f3e6c94204ee9b1a"
+  },
+  "_source": "git://github.com/opal/opal-cdn.git",
+  "_target": "~0.6.3",
+  "_originalSource": "opal"
+}
